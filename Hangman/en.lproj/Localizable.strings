@@ -1,0 +1,35 @@
+/* 
+  Words.strings
+  Hangman
+
+  Created by Andrei Korikov on 24.10.2021.
+  
+*/
+"words" =
+"apple: Fruit
+watermelon: Fruit
+tennis: Sport
+volleyball: Sport
+heart: Anatomy
+lungs: Anatomy
+driver: Profession
+programmer: Profession
+ant: Insect
+spider: Insect
+gorilla: Animal, primacy
+gymnastics: Sport
+swimming: Sport
+pineapple: Fruit
+papaya: Fruit
+stomach: Anatomy
+jaw: Anatomy
+salesman: Profession
+surgeon: Profession
+dolphin: Aquatic animal
+mantis: Insect";
+"round" = "Round";
+"clue" = "Clue";
+"newGameMsg" = "Start a new game?";
+"loseTitle" = "You lose";
+"winTitle" = "You win";
+"winGameMsg" = "You complete all words. Start a new game?";

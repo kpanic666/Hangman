@@ -13,6 +13,7 @@
 		E9A59D5827257CCD0000A68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A59D5627257CCD0000A68F /* Main.storyboard */; };
 		E9A59D5A27257CCF0000A68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A59D5927257CCF0000A68F /* Assets.xcassets */; };
 		E9A59D5D27257CCF0000A68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A59D5B27257CCF0000A68F /* LaunchScreen.storyboard */; };
+		E9A59D6627257F060000A68F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9A59D6827257F060000A68F /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		E9A59D5927257CCF0000A68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9A59D5C27257CCF0000A68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A59D5E27257CCF0000A68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A59D6727257F060000A68F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9A59D6A2725801D0000A68F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9A59D75272688C80000A68F /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				E9A59D5927257CCF0000A68F /* Assets.xcassets */,
 				E9A59D5B27257CCF0000A68F /* LaunchScreen.storyboard */,
 				E9A59D5E27257CCF0000A68F /* Info.plist */,
+				E9A59D6827257F060000A68F /* Localizable.strings */,
 			);
 			path = Hangman;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = E9A59D4427257CCD0000A68F;
 			productRefGroup = E9A59D4E27257CCD0000A68F /* Products */;
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A59D6627257F060000A68F /* Localizable.strings in Resources */,
 				E9A59D5D27257CCF0000A68F /* LaunchScreen.storyboard in Resources */,
 				E9A59D5A27257CCF0000A68F /* Assets.xcassets in Resources */,
 				E9A59D5827257CCD0000A68F /* Main.storyboard in Resources */,
@@ -151,6 +158,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E9A59D5727257CCD0000A68F /* Base */,
+				E9A59D75272688C80000A68F /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -163,6 +171,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E9A59D6827257F060000A68F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9A59D6727257F060000A68F /* en */,
+				E9A59D6A2725801D0000A68F /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -170,6 +187,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -231,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -295,7 +314,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,7 +325,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -323,7 +342,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,7 +353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
