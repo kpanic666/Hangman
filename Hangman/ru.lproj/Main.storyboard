@@ -17,36 +17,501 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nL-oP-iXZ">
-                                <rect key="frame" x="334.5" y="40" width="141" height="27"/>
+                                <rect key="frame" x="334.5" y="30" width="141" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGy-nz-Bsu">
-                                <rect key="frame" x="370.5" y="97" width="69.5" height="42"/>
+                                <rect key="frame" x="370.5" y="67" width="69.5" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncy-ub-PWN">
-                                <rect key="frame" x="246" y="183" width="318" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Word Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncy-ub-PWN">
+                                <rect key="frame" x="246" y="173" width="318" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="750" constant="60" id="Wv5-w0-FkI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="vFx-VS-m3c">
-                                <rect key="frame" x="20" y="664" width="770" height="396"/>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vFx-VS-m3c">
+                                <rect key="frame" x="20" y="654" width="770" height="406"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzF-Zh-6Qw">
+                                        <rect key="frame" x="8" y="8" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Gtv-At-jzM"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="А">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xR-Gi-s78"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJE-q6-5rK">
+                                        <rect key="frame" x="8" y="83" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Е">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pf9-vh-wUD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFN-TY-wk1">
+                                        <rect key="frame" x="8" y="158" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ё">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="np6-nE-WrN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWC-5C-Yp9">
+                                        <rect key="frame" x="8" y="233" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="И">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lXU-ua-ZqN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBp-Tw-TFQ">
+                                        <rect key="frame" x="8" y="308" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="О">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cse-Cg-lQ4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEg-WX-RQg">
+                                        <rect key="frame" x="128" y="8" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="f80-5b-puG"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="У">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cST-yh-f7s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCs-xe-Jbf">
+                                        <rect key="frame" x="402" y="8" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="wpI-Ob-q0x"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Й">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joT-Vx-MVy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8za-dq-0wJ">
+                                        <rect key="frame" x="272" y="8" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Enw-Kg-MC3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Б">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1aD-NZ-F26"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mv-EH-ec6">
+                                        <rect key="frame" x="272" y="73" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="В">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T9a-Sm-rmW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-SO-HL2">
+                                        <rect key="frame" x="272" y="138" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Г">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qv8-86-n0n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUw-lX-r1S">
+                                        <rect key="frame" x="272" y="268" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ж">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdB-CT-yoD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrR-pK-jTP">
+                                        <rect key="frame" x="272" y="333" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="З">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OUu-WS-0WE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3n-5U-qQT">
+                                        <rect key="frame" x="402" y="73" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="К">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngv-Ba-a5j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7z-Gy-K89">
+                                        <rect key="frame" x="402" y="138" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Л">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YUQ-2H-WVO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KJ-65-Ofp">
+                                        <rect key="frame" x="402" y="203" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="М">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0o-sG-ig5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txQ-ga-AWS">
+                                        <rect key="frame" x="402" y="268" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Н">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edn-Gi-d9C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R7-X8-DGr">
+                                        <rect key="frame" x="402" y="333" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="П">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coK-pr-Vlf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJA-pe-zJr">
+                                        <rect key="frame" x="532" y="8" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="dG3-YK-Aov"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Р">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNS-c7-eMA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TP-hh-jK5">
+                                        <rect key="frame" x="532" y="73" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="С">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBj-Wg-3sN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfG-ze-X44">
+                                        <rect key="frame" x="532" y="138" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Т">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9s-yF-wJg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Av3-xU-6Ny">
+                                        <rect key="frame" x="532" y="203" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ф">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Vv-z3-GFA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5e-IU-Djt">
+                                        <rect key="frame" x="662" y="8" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ч">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQA-mn-Esv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRU-5t-PNe">
+                                        <rect key="frame" x="662" y="73" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ш">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="caH-Eg-ZmL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-n6-u2Y">
+                                        <rect key="frame" x="662" y="138" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Щ">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xpd-3g-zUI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef4-LN-R7L">
+                                        <rect key="frame" x="662" y="203" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ъ">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hx-TK-L0g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7R-in-bdY">
+                                        <rect key="frame" x="662" y="268" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="bFE-RX-lRV"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ь">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWv-Cn-3zK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7g-LE-Od1">
+                                        <rect key="frame" x="532" y="268" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Х">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Inb-pj-SaH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plj-Dm-t9u">
+                                        <rect key="frame" x="532" y="333" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ц">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N34-IT-NGa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vk-W9-5Ap">
+                                        <rect key="frame" x="128" y="83" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ы">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u00-bG-uJz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-rs-Vmd">
+                                        <rect key="frame" x="128" y="158" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Э">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4v6-HP-vK4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW6-4K-64L">
+                                        <rect key="frame" x="128" y="233" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Ю">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZ6-kE-RaY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kji-Ob-B4L">
+                                        <rect key="frame" x="128" y="308" width="100" height="50"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Я">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AAX-dK-8XP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-nF-eKx">
+                                        <rect key="frame" x="272" y="203" width="100" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Д">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="letterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYb-gc-hiA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wfG-ze-X44" firstAttribute="trailing" secondItem="Av3-xU-6Ny" secondAttribute="trailing" id="0QW-7H-u96"/>
+                                    <constraint firstItem="SMc-SO-HL2" firstAttribute="trailing" secondItem="5NO-nF-eKx" secondAttribute="trailing" id="1FB-3e-hLn"/>
+                                    <constraint firstItem="sJA-pe-zJr" firstAttribute="trailing" secondItem="8TP-hh-jK5" secondAttribute="trailing" id="1Qc-Ie-tOE"/>
+                                    <constraint firstItem="aEg-WX-RQg" firstAttribute="baseline" secondItem="8za-dq-0wJ" secondAttribute="baseline" id="1pJ-gq-CaJ"/>
+                                    <constraint firstItem="eFN-TY-wk1" firstAttribute="top" secondItem="SJE-q6-5rK" secondAttribute="bottom" priority="750" constant="25" id="2Xu-HB-Gkb"/>
+                                    <constraint firstItem="UCs-xe-Jbf" firstAttribute="trailing" secondItem="a3n-5U-qQT" secondAttribute="trailing" id="3Ll-EN-DHL"/>
+                                    <constraint firstItem="txQ-ga-AWS" firstAttribute="baseline" secondItem="b7g-LE-Od1" secondAttribute="baseline" id="5xp-Vd-ceX"/>
+                                    <constraint firstItem="PzF-Zh-6Qw" firstAttribute="baseline" secondItem="aEg-WX-RQg" secondAttribute="baseline" id="68q-oB-fd7"/>
+                                    <constraint firstItem="aUw-lX-r1S" firstAttribute="trailing" secondItem="WrR-pK-jTP" secondAttribute="trailing" id="8lO-jB-SJI"/>
+                                    <constraint firstItem="7KJ-65-Ofp" firstAttribute="trailing" secondItem="txQ-ga-AWS" secondAttribute="trailing" id="8nS-m0-s2Q"/>
+                                    <constraint firstItem="eFN-TY-wk1" firstAttribute="trailing" secondItem="bWC-5C-Yp9" secondAttribute="trailing" id="ABe-ij-y05"/>
+                                    <constraint firstItem="SJE-q6-5rK" firstAttribute="leading" secondItem="eFN-TY-wk1" secondAttribute="leading" id="AW3-on-AmF"/>
+                                    <constraint firstItem="wW6-4K-64L" firstAttribute="trailing" secondItem="Kji-Ob-B4L" secondAttribute="trailing" id="AfF-Bt-Eqe"/>
+                                    <constraint firstItem="5NO-nF-eKx" firstAttribute="baseline" secondItem="7KJ-65-Ofp" secondAttribute="baseline" id="B3j-2i-nA0"/>
+                                    <constraint firstAttribute="height" priority="250" constant="406" id="B7u-9P-psX"/>
+                                    <constraint firstItem="aUw-lX-r1S" firstAttribute="baseline" secondItem="txQ-ga-AWS" secondAttribute="baseline" id="BzN-Ct-3wg"/>
+                                    <constraint firstItem="5NO-nF-eKx" firstAttribute="leading" secondItem="aUw-lX-r1S" secondAttribute="leading" id="CHS-GR-R9h"/>
+                                    <constraint firstItem="PzF-Zh-6Qw" firstAttribute="trailing" secondItem="SJE-q6-5rK" secondAttribute="trailing" id="D2t-z0-p4Z"/>
+                                    <constraint firstItem="sJA-pe-zJr" firstAttribute="leading" secondItem="8TP-hh-jK5" secondAttribute="leading" id="D5y-HN-t1B"/>
+                                    <constraint firstItem="f7z-Gy-K89" firstAttribute="trailing" secondItem="7KJ-65-Ofp" secondAttribute="trailing" id="DEE-BR-mLF"/>
+                                    <constraint firstItem="eFN-TY-wk1" firstAttribute="leading" secondItem="bWC-5C-Yp9" secondAttribute="leading" id="Dih-Y1-ofi"/>
+                                    <constraint firstItem="txQ-ga-AWS" firstAttribute="trailing" secondItem="3R7-X8-DGr" secondAttribute="trailing" id="EMS-eH-jJQ"/>
+                                    <constraint firstItem="a3n-5U-qQT" firstAttribute="baseline" secondItem="8TP-hh-jK5" secondAttribute="baseline" id="El9-jr-K6E"/>
+                                    <constraint firstItem="Av3-xU-6Ny" firstAttribute="leading" secondItem="b7g-LE-Od1" secondAttribute="leading" id="F2d-wb-ch8"/>
+                                    <constraint firstItem="sJA-pe-zJr" firstAttribute="baseline" secondItem="W5e-IU-Djt" secondAttribute="baseline" id="FpB-2e-u0G"/>
+                                    <constraint firstItem="8za-dq-0wJ" firstAttribute="leading" secondItem="aEg-WX-RQg" secondAttribute="trailing" priority="750" constant="44" id="GOs-xb-Cgq"/>
+                                    <constraint firstItem="f7z-Gy-K89" firstAttribute="baseline" secondItem="wfG-ze-X44" secondAttribute="baseline" id="IBR-6w-QFA"/>
+                                    <constraint firstItem="wW6-4K-64L" firstAttribute="leading" secondItem="Kji-Ob-B4L" secondAttribute="leading" id="IDs-Yy-TUS"/>
+                                    <constraint firstItem="SJE-q6-5rK" firstAttribute="top" secondItem="PzF-Zh-6Qw" secondAttribute="bottom" priority="750" constant="25" id="IIX-zF-yL4"/>
+                                    <constraint firstItem="W5e-IU-Djt" firstAttribute="trailing" secondItem="TRU-5t-PNe" secondAttribute="trailing" id="Ilc-CR-kfe"/>
+                                    <constraint firstItem="UCs-xe-Jbf" firstAttribute="leading" secondItem="a3n-5U-qQT" secondAttribute="leading" id="Im8-3O-33F"/>
+                                    <constraint firstItem="aUw-lX-r1S" firstAttribute="leading" secondItem="WrR-pK-jTP" secondAttribute="leading" id="Io4-Pj-vxs"/>
+                                    <constraint firstItem="7KJ-65-Ofp" firstAttribute="baseline" secondItem="Av3-xU-6Ny" secondAttribute="baseline" id="JCi-Et-EXc"/>
+                                    <constraint firstItem="9vk-W9-5Ap" firstAttribute="leading" secondItem="aYV-rs-Vmd" secondAttribute="leading" id="Jc7-rh-U9g"/>
+                                    <constraint firstItem="aEg-WX-RQg" firstAttribute="leading" secondItem="PzF-Zh-6Qw" secondAttribute="trailing" constant="20" id="KIc-r2-sFc"/>
+                                    <constraint firstItem="WrR-pK-jTP" firstAttribute="baseline" secondItem="3R7-X8-DGr" secondAttribute="baseline" id="KWb-O2-Uej"/>
+                                    <constraint firstItem="aEg-WX-RQg" firstAttribute="trailing" secondItem="9vk-W9-5Ap" secondAttribute="trailing" id="MFB-v5-Xe8"/>
+                                    <constraint firstItem="ef4-LN-R7L" firstAttribute="leading" secondItem="h7R-in-bdY" secondAttribute="leading" id="PUh-rp-Ptv"/>
+                                    <constraint firstItem="aUw-lX-r1S" firstAttribute="top" secondItem="5NO-nF-eKx" secondAttribute="bottom" constant="15" id="Pa9-EC-BcX"/>
+                                    <constraint firstItem="8za-dq-0wJ" firstAttribute="trailing" secondItem="1Mv-EH-ec6" secondAttribute="trailing" id="Pi2-rc-qhO"/>
+                                    <constraint firstItem="1Mv-EH-ec6" firstAttribute="leading" secondItem="SMc-SO-HL2" secondAttribute="leading" id="PyZ-XN-pAJ"/>
+                                    <constraint firstItem="8TP-hh-jK5" firstAttribute="baseline" secondItem="TRU-5t-PNe" secondAttribute="baseline" id="QNL-NK-lxh"/>
+                                    <constraint firstItem="wfG-ze-X44" firstAttribute="baseline" secondItem="xkm-n6-u2Y" secondAttribute="baseline" id="RKH-me-FAy"/>
+                                    <constraint firstItem="1Mv-EH-ec6" firstAttribute="top" secondItem="8za-dq-0wJ" secondAttribute="bottom" constant="15" id="Rln-XS-v9I"/>
+                                    <constraint firstItem="b7g-LE-Od1" firstAttribute="trailing" secondItem="plj-Dm-t9u" secondAttribute="trailing" id="SR5-kE-WJF"/>
+                                    <constraint firstItem="sJA-pe-zJr" firstAttribute="leading" secondItem="UCs-xe-Jbf" secondAttribute="trailing" constant="30" id="T7B-Xc-UrQ"/>
+                                    <constraint firstItem="9vk-W9-5Ap" firstAttribute="trailing" secondItem="aYV-rs-Vmd" secondAttribute="trailing" id="UEm-sK-3YO"/>
+                                    <constraint firstItem="aYV-rs-Vmd" firstAttribute="trailing" secondItem="wW6-4K-64L" secondAttribute="trailing" id="VXQ-QF-uHt"/>
+                                    <constraint firstItem="Av3-xU-6Ny" firstAttribute="baseline" secondItem="ef4-LN-R7L" secondAttribute="baseline" id="WoW-y3-U9M"/>
+                                    <constraint firstItem="SJE-q6-5rK" firstAttribute="trailing" secondItem="eFN-TY-wk1" secondAttribute="trailing" id="Yfb-mJ-0aE"/>
+                                    <constraint firstItem="f7z-Gy-K89" firstAttribute="leading" secondItem="7KJ-65-Ofp" secondAttribute="leading" id="Z8M-N5-NKx"/>
+                                    <constraint firstItem="a3n-5U-qQT" firstAttribute="trailing" secondItem="f7z-Gy-K89" secondAttribute="trailing" id="ZOR-gz-L5E"/>
+                                    <constraint firstItem="ef4-LN-R7L" firstAttribute="trailing" secondItem="h7R-in-bdY" secondAttribute="trailing" id="a7h-g7-aNX"/>
+                                    <constraint firstItem="b7g-LE-Od1" firstAttribute="leading" secondItem="plj-Dm-t9u" secondAttribute="leading" id="b0E-5o-6mr"/>
+                                    <constraint firstItem="W5e-IU-Djt" firstAttribute="leading" secondItem="sJA-pe-zJr" secondAttribute="trailing" constant="30" id="baN-b4-J30"/>
+                                    <constraint firstItem="UCs-xe-Jbf" firstAttribute="baseline" secondItem="sJA-pe-zJr" secondAttribute="baseline" id="bgq-eS-AYg"/>
+                                    <constraint firstItem="8TP-hh-jK5" firstAttribute="trailing" secondItem="wfG-ze-X44" secondAttribute="trailing" id="cGW-kc-FQs"/>
+                                    <constraint firstItem="SMc-SO-HL2" firstAttribute="leading" secondItem="5NO-nF-eKx" secondAttribute="leading" id="dga-M1-hPj"/>
+                                    <constraint firstItem="PzF-Zh-6Qw" firstAttribute="leading" secondItem="SJE-q6-5rK" secondAttribute="leading" id="eXU-3z-syG"/>
+                                    <constraint firstItem="PzF-Zh-6Qw" firstAttribute="top" secondItem="vFx-VS-m3c" secondAttribute="topMargin" id="ert-ZK-7jp"/>
+                                    <constraint firstItem="aEg-WX-RQg" firstAttribute="leading" secondItem="9vk-W9-5Ap" secondAttribute="leading" id="fJ7-zZ-6Xc"/>
+                                    <constraint firstItem="8za-dq-0wJ" firstAttribute="leading" secondItem="1Mv-EH-ec6" secondAttribute="leading" id="fzx-Ax-9bg"/>
+                                    <constraint firstItem="bWC-5C-Yp9" firstAttribute="top" secondItem="eFN-TY-wk1" secondAttribute="bottom" priority="750" constant="25" id="gKA-Nl-5TK"/>
+                                    <constraint firstItem="1Mv-EH-ec6" firstAttribute="baseline" secondItem="a3n-5U-qQT" secondAttribute="baseline" id="gVl-Li-QbG"/>
+                                    <constraint firstItem="7KJ-65-Ofp" firstAttribute="leading" secondItem="txQ-ga-AWS" secondAttribute="leading" id="hNY-yC-ze7"/>
+                                    <constraint firstItem="xkm-n6-u2Y" firstAttribute="trailing" secondItem="ef4-LN-R7L" secondAttribute="trailing" id="ipe-Oh-5Jf"/>
+                                    <constraint firstItem="eFN-TY-wk1" firstAttribute="baseline" secondItem="aYV-rs-Vmd" secondAttribute="baseline" id="isz-uT-aJp"/>
+                                    <constraint firstItem="bWC-5C-Yp9" firstAttribute="baseline" secondItem="wW6-4K-64L" secondAttribute="baseline" id="k2F-0K-1kw"/>
+                                    <constraint firstItem="b7g-LE-Od1" firstAttribute="baseline" secondItem="h7R-in-bdY" secondAttribute="baseline" id="k6y-Fs-BNo"/>
+                                    <constraint firstItem="1Mv-EH-ec6" firstAttribute="trailing" secondItem="SMc-SO-HL2" secondAttribute="trailing" id="kag-gm-rzR"/>
+                                    <constraint firstItem="aYV-rs-Vmd" firstAttribute="leading" secondItem="wW6-4K-64L" secondAttribute="leading" id="llK-YG-MIv"/>
+                                    <constraint firstItem="kBp-Tw-TFQ" firstAttribute="top" secondItem="bWC-5C-Yp9" secondAttribute="bottom" priority="750" constant="25" id="mS5-Rn-7yJ"/>
+                                    <constraint firstItem="bWC-5C-Yp9" firstAttribute="leading" secondItem="kBp-Tw-TFQ" secondAttribute="leading" id="nAK-mi-VmJ"/>
+                                    <constraint firstItem="WrR-pK-jTP" firstAttribute="top" secondItem="aUw-lX-r1S" secondAttribute="bottom" constant="15" id="nF6-Te-iL4"/>
+                                    <constraint firstItem="TRU-5t-PNe" firstAttribute="trailing" secondItem="xkm-n6-u2Y" secondAttribute="trailing" id="nqP-8S-7Cc"/>
+                                    <constraint firstItem="SJE-q6-5rK" firstAttribute="baseline" secondItem="9vk-W9-5Ap" secondAttribute="baseline" id="nwO-3U-XVj"/>
+                                    <constraint firstItem="5NO-nF-eKx" firstAttribute="trailing" secondItem="aUw-lX-r1S" secondAttribute="trailing" id="oCc-in-Frz"/>
+                                    <constraint firstItem="xkm-n6-u2Y" firstAttribute="leading" secondItem="ef4-LN-R7L" secondAttribute="leading" id="pWo-Zi-vPm"/>
+                                    <constraint firstItem="SMc-SO-HL2" firstAttribute="baseline" secondItem="f7z-Gy-K89" secondAttribute="baseline" id="pcv-cl-ZT9"/>
+                                    <constraint firstItem="wfG-ze-X44" firstAttribute="leading" secondItem="Av3-xU-6Ny" secondAttribute="leading" id="qOo-4D-hv7"/>
+                                    <constraint firstItem="Av3-xU-6Ny" firstAttribute="trailing" secondItem="b7g-LE-Od1" secondAttribute="trailing" id="qx6-1l-0Dy"/>
+                                    <constraint firstItem="TRU-5t-PNe" firstAttribute="leading" secondItem="xkm-n6-u2Y" secondAttribute="leading" id="r9h-VL-xwu"/>
+                                    <constraint firstItem="8za-dq-0wJ" firstAttribute="baseline" secondItem="UCs-xe-Jbf" secondAttribute="baseline" id="sUD-Ws-b56"/>
+                                    <constraint firstItem="5NO-nF-eKx" firstAttribute="top" secondItem="SMc-SO-HL2" secondAttribute="bottom" constant="15" id="tBV-xh-fss"/>
+                                    <constraint firstItem="8TP-hh-jK5" firstAttribute="leading" secondItem="wfG-ze-X44" secondAttribute="leading" id="uFP-pO-2r7"/>
+                                    <constraint firstItem="kBp-Tw-TFQ" firstAttribute="baseline" secondItem="Kji-Ob-B4L" secondAttribute="baseline" id="uzV-ir-6EX"/>
+                                    <constraint firstItem="SMc-SO-HL2" firstAttribute="top" secondItem="1Mv-EH-ec6" secondAttribute="bottom" constant="15" id="v0m-6t-Cf7"/>
+                                    <constraint firstItem="W5e-IU-Djt" firstAttribute="trailing" secondItem="vFx-VS-m3c" secondAttribute="trailingMargin" id="vul-zr-Chk"/>
+                                    <constraint firstItem="a3n-5U-qQT" firstAttribute="leading" secondItem="f7z-Gy-K89" secondAttribute="leading" id="xeJ-3V-XeM"/>
+                                    <constraint firstItem="W5e-IU-Djt" firstAttribute="leading" secondItem="TRU-5t-PNe" secondAttribute="leading" id="xpd-b6-vy2"/>
+                                    <constraint firstItem="bWC-5C-Yp9" firstAttribute="trailing" secondItem="kBp-Tw-TFQ" secondAttribute="trailing" id="xq7-4r-Yos"/>
+                                    <constraint firstItem="3R7-X8-DGr" firstAttribute="baseline" secondItem="plj-Dm-t9u" secondAttribute="baseline" id="y2F-A3-DbB"/>
+                                    <constraint firstItem="txQ-ga-AWS" firstAttribute="leading" secondItem="3R7-X8-DGr" secondAttribute="leading" id="y7B-Hq-Shl"/>
+                                    <constraint firstItem="UCs-xe-Jbf" firstAttribute="leading" secondItem="8za-dq-0wJ" secondAttribute="trailing" constant="30" id="z47-62-syB"/>
+                                    <constraint firstItem="PzF-Zh-6Qw" firstAttribute="leading" secondItem="vFx-VS-m3c" secondAttribute="leadingMargin" id="z4d-LL-qye"/>
+                                </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="dOw-y5-7EH">
-                                <rect key="frame" x="162" y="289" width="486" height="324"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOw-y5-7EH">
+                                <rect key="frame" x="162" y="279" width="486" height="324"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Подсказка:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-Nj-xAe">
-                                <rect key="frame" x="238" y="104" width="108" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подсказка:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-Nj-xAe">
+                                <rect key="frame" x="242.5" y="75" width="108" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Letters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITS-w7-hBD">
+                                <rect key="frame" x="604" y="193" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -54,25 +519,31 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vFx-VS-m3c" secondAttribute="bottom" constant="20" id="0av-OF-hng"/>
-                            <constraint firstItem="qGy-nz-Bsu" firstAttribute="top" secondItem="1nL-oP-iXZ" secondAttribute="bottom" priority="999" constant="30" id="8hD-ka-cSd"/>
+                            <constraint firstItem="qGy-nz-Bsu" firstAttribute="top" secondItem="1nL-oP-iXZ" secondAttribute="bottom" priority="250" constant="10" id="8hD-ka-cSd"/>
+                            <constraint firstItem="hGK-Nj-xAe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="8vC-jL-Z6k"/>
                             <constraint firstItem="vFx-VS-m3c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HXs-Li-LdW"/>
-                            <constraint firstItem="dOw-y5-7EH" firstAttribute="top" secondItem="ncy-ub-PWN" secondAttribute="bottom" constant="46" id="Mki-nx-7NJ"/>
-                            <constraint firstItem="1nL-oP-iXZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Nn6-a2-aBa"/>
+                            <constraint firstItem="ITS-w7-hBD" firstAttribute="centerY" secondItem="ncy-ub-PWN" secondAttribute="centerY" id="JsJ-F2-6Fq"/>
+                            <constraint firstItem="dOw-y5-7EH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ncy-ub-PWN" secondAttribute="bottom" constant="10" id="Mki-nx-7NJ"/>
+                            <constraint firstItem="1nL-oP-iXZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Nn6-a2-aBa"/>
                             <constraint firstItem="dOw-y5-7EH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NqZ-NV-T2f"/>
-                            <constraint firstItem="dOw-y5-7EH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="Tk4-VE-4qg"/>
+                            <constraint firstItem="ITS-w7-hBD" firstAttribute="leading" secondItem="ncy-ub-PWN" secondAttribute="trailing" constant="40" id="O02-0a-i6O"/>
+                            <constraint firstItem="dOw-y5-7EH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" priority="750" id="Tk4-VE-4qg"/>
+                            <constraint firstItem="qGy-nz-Bsu" firstAttribute="centerY" secondItem="hGK-Nj-xAe" secondAttribute="centerY" id="Zvk-Fh-yrQ"/>
+                            <constraint firstItem="vFx-VS-m3c" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dOw-y5-7EH" secondAttribute="bottom" constant="5" id="e4u-Xu-gYe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vFx-VS-m3c" secondAttribute="trailing" constant="20" id="ff4-Jf-IOP"/>
                             <constraint firstItem="qGy-nz-Bsu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jw0-Xl-dDn"/>
-                            <constraint firstItem="ncy-ub-PWN" firstAttribute="top" secondItem="qGy-nz-Bsu" secondAttribute="bottom" priority="999" constant="44" id="lio-sJ-MNj"/>
+                            <constraint firstItem="ncy-ub-PWN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qGy-nz-Bsu" secondAttribute="bottom" priority="250" constant="10" id="lio-sJ-MNj"/>
                             <constraint firstItem="ncy-ub-PWN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qgv-dc-x9Q"/>
-                            <constraint firstItem="dOw-y5-7EH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="vWJ-PX-A69"/>
-                            <constraint firstItem="vFx-VS-m3c" firstAttribute="top" secondItem="dOw-y5-7EH" secondAttribute="bottom" constant="51" id="zGp-6U-pic"/>
+                            <constraint firstItem="qGy-nz-Bsu" firstAttribute="leading" secondItem="hGK-Nj-xAe" secondAttribute="trailing" constant="20" id="siv-vM-U4X"/>
+                            <constraint firstItem="dOw-y5-7EH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" priority="750" id="vWJ-PX-A69"/>
                             <constraint firstItem="1nL-oP-iXZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zts-ki-eeW"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonsView" destination="vFx-VS-m3c" id="Waa-Wd-n1q"/>
+                        <outlet property="buttonsView" destination="vFx-VS-m3c" id="VlV-dE-RfM"/>
                         <outlet property="clueLabel" destination="qGy-nz-Bsu" id="jLy-mk-hAx"/>
                         <outlet property="hangmanImage" destination="dOw-y5-7EH" id="Q1N-Yk-jq9"/>
+                        <outlet property="numOfLettersLabel" destination="ITS-w7-hBD" id="vyw-Cc-3Wm"/>
                         <outlet property="roundLabel" destination="1nL-oP-iXZ" id="6fq-uS-Ttg"/>
                         <outlet property="wordLabel" destination="ncy-ub-PWN" id="weF-DU-InN"/>
                     </connections>

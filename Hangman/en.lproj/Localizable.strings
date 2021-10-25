@@ -33,3 +33,4 @@ mantis: Insect";
 "loseTitle" = "You lose";
 "winTitle" = "You win";
 "winGameMsg" = "You complete all words. Start a new game?";
+"letters" = "letters";
